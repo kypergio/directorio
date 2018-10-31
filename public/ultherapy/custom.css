@@ -1,0 +1,482 @@
+.Content .container {
+	margin:0 auto;
+	width:100%;
+	max-width:1024px;
+}
+.Content .container .row {
+	width:100%;
+}
+.Content .container .row .column {
+	padding:0 20px 0 20px;
+	width:100%;
+	font-family: 'Lato', sans-serif;
+}
+
+/* ----- Hero content ----- */
+.Content .hero {
+	padding:50px 0 64px 0;
+	width:100%;
+	text-align:center;
+	background-image: linear-gradient(282deg, #ffd06d, #f1b434);
+}
+.Content .hero .container {
+	max-width:750px;
+}
+.Content .hero .container .row .column h1 {
+	font-size: 40px;
+  	font-weight: bold;
+  	line-height: 1.25;
+  	letter-spacing: 2.9px;
+  	color: #ffffff;
+}
+.Content .hero .container .row .column p {
+	margin-top:40px;
+	font-size: 18px;
+  	line-height: 1.4;
+	color: #ffffff;
+}
+
+/* ----- Search bar content ----- */
+.Content .search-bar {
+	padding:30px 0 30px 0;
+	background:#e9e9e9;
+}
+.Content .search-bar .container {
+	max-width:980px;
+}
+.Content .search-bar .container .row .column form {
+	width:100%;
+}
+.Content .search-bar .container .row .column form fieldset {
+	position:relative;
+	display:inline-block;
+	width:35%;
+	vertical-align:top;
+	text-align:left;
+}
+.Content .search-bar .container .row .column form fieldset:nth-child(3) {
+	width:28%;
+	text-align:right;
+}
+.Content .search-bar .container .row .column form fieldset:last-child {
+	margin-top:10px;
+	width:100%;
+	text-align:center;
+}
+.Content .search-bar .container .row .column form fieldset input {
+	padding:10px;
+	width:92%;
+	font-size:14px;
+	color:;
+	background:#FFF;
+	border:1px solid #fff;
+	font-family: 'Lato', sans-serif;	
+}
+.Content .search-bar .container .row .column form fieldset:nth-child(3):before {
+	position:absolute;
+	top:0;
+	right:39px;
+	display:block;
+	height:34px;
+	border-left:1px solid #000;
+	z-index:1;
+	content:'';
+}
+.Content .search-bar .container .row .column form fieldset:nth-child(3):after {
+	position:absolute;
+	top:14px;
+	right:10px;
+	display:block;
+	width: 0; 
+  	height: 0; 
+  	border-left: 8px solid transparent;
+  	border-right: 8px solid transparent;
+  	border-top: 8px solid #000;
+	content:'';
+}
+.Content .search-bar .container .row .column form fieldset select {
+	padding:8px;
+	width:96%;
+	min-height:34px;
+	font-size:14px;
+	color:#777;
+	background:#FFF;
+	border:1px solid #fff;
+	border-radius:0;
+	cursor:pointer;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-o-appearance:none;
+	appearance:none;
+	font-family: 'Lato', sans-serif;
+}
+.Content .search-bar .container .row .column form fieldset input:focus {
+	border:1px solid #f4bb50;
+}
+.Content .search-bar .container .row .column form fieldset label {
+	display:block;
+	margin-top:15px;
+	font-size: 14px;
+  	font-weight: bold;
+  	line-height: 2;
+  	color: #8a1538;
+	text-decoration:underline;
+	cursor:pointer;
+}
+.Content .search-bar .container .row .column form fieldset button {
+	padding:12px 44px 12px 44px;
+	font-size:14px;
+	color:#FFF;
+	cursor:pointer;
+	background:#f4bb50;
+	font-family: 'Lato', sans-serif;
+}
+
+/* ----- Search results content ----- */
+.Content .search-results {
+	padding:50px 0 50px 0;
+	background:#f9f9f9;
+}
+.Content .search-results .container .row .column h2 {
+	font-size:16px;
+	font-weight:normal;
+}
+.Content .search-results .container .row .column p {
+	margin:20px 0 20px 0;
+	padding:20px;
+	vertical-align:top;
+	background:#FFF;
+}
+.Content .search-results .container .row .column p img {
+	display:inline-block;
+	max-width:70px;
+}
+.Content .search-results .container .row .column p span {
+	display:inline-block;
+	margin:18px 0 0 30px;
+	font-size:22px;
+	color:#54585a;
+	vertical-align:top;
+}
+.Content .search-results .container .row .column p span:before {
+	display:block;
+	margin:0 0 5px 0;
+	font-size:14px;
+	text-transform:uppercase;
+}
+.Content .search-results .container .row .column p.medic span:before {
+	content:'Médico';	
+}
+.Content .search-results .container .row .column p.clinic span:before {
+	content:'Clínica';
+}
+.Content .search-results .container .row .column p span:last-child {
+	font-size:13px;
+	text-align:right;
+	float:right;	
+}
+.Content .search-results .container .row .column p span:last-child b {
+	display:block;	
+	margin:0 0 5px 0;
+	font-size:16px;
+  	text-transform:uppercase;	
+}
+.Content .search-results .container .row .column p span:last-child:before {
+	content:none;	
+}
+
+/* ----- Profile content ----- */
+.Content .profile {
+	padding:49px 0 50px 0;
+	background:rgba(199, 201, 199, 0.1);
+}
+.Content .profile .container {
+	max-width:750px;
+}
+.Content .profile .container .row .column img  {
+	display:inline-block;
+}
+.Content .profile .container .row .column span {
+	display:inline-block;
+	margin:100px 0 0 85px;
+  	font-size: 28px;
+  	color: #54585a;
+	vertical-align:top;
+}
+.Content .profile .container .row .column span:before {
+	display:block;
+	margin:0 0 5px 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+  	color: rgba(84, 88, 90, 0.6);
+  	text-transform:uppercase;
+}
+.Content .profile .container .row .medic span:before {
+	content:'Médico';
+}
+.Content .profile .container .row .clinic span:before {
+	content:'Clínica';
+}
+
+/* ----- Location content ----- */
+.Content .location {
+	padding:61px 0 100px 0;
+}
+.Content .location .container .row .column.half {
+	display:inline-block;
+	width:49%;
+	vertical-align:top;
+}
+.Content .location .container .row .column p {
+	font-size: 18px;
+  	letter-spacing: normal;
+  	color: #54585a;
+  	line-height: 1.44;
+}
+.Content .location .container .row .column p span {
+	display:block;
+	font-size: 14px;
+  	letter-spacing: 1px;
+  	color: rgba(84, 88, 90, 0.6);
+  	text-transform:uppercase;
+}
+.Content .location .container .row .column p:last-child {
+	margin-top:100px
+}
+.Content .location .container .row .column p:last-child a {
+	font-size: 14px;
+  	font-weight: bold;
+  	line-height: 2;
+  	color: #8a1538;
+}
+
+/* ----- generic styles for modal ----- */
+.modal {
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	width:100%;
+	height:100%;
+	text-align:center;
+	float:left;
+	background:rgba(0,0,0,0.8);
+	z-index:101;
+	opacity:1;
+}
+.modal .row {
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+.modal .row .column {
+	display:inline-block;
+	margin:0 auto;
+	padding:0;
+	max-width:840px;
+	width:100%;
+	min-height:1px;
+	float:none;
+}
+.modal .row .column .registration, .modal .row .column .success {
+	position:relative;
+	padding:50px;
+	width:100%;
+	background:#FFF;
+}
+.modal .row .column .registration p {
+	font-size: 18px;
+  	line-height: 1.44;
+  	text-align:center;
+  	color: #54585a;
+	font-family: 'Lato', sans-serif;	
+}
+.modal .row .column .registration p a {
+	font-size: 14px;
+  	color: #54585a;
+}
+.modal .row .column .registration p:last-child {
+	font-size: 17px;
+  	color:  rgba(84, 88, 90, 0.6);
+}
+.modal .row .column .registration form {
+	margin:45px 0 15px 0;
+	width:100%;
+	text-align:center;
+}
+.modal .row .column .registration form fieldset {
+	position:relative;
+	display:inline-block;
+	margin:15px 0 15px 0;
+	width:49%;
+}
+.modal .row .column .registration form fieldset:last-child {
+	width:100%;
+}
+.modal .row .column .registration form fieldset input {
+	width:100%;
+	padding:0 20px 0 20px;
+	max-width: 300px;
+	height:38px;
+	font-size:14px;
+	color:rgba(84, 88, 90, 0.6);
+	border-radius: 2px;
+	line-height:38px;
+	background-color: #ffffff;
+	border: solid 1px #dfe3e9;
+	font-family: 'Lato', sans-serif;
+}
+.modal .row .column .registration form fieldset input:focus, .modal .row .column .registration form fieldset textarea:focus, .modal .row .column .registration form fieldset select:focus {
+	border-color:#f4bb50;
+}
+.modal .row .column .registration form fieldset textarea {
+	display:block;
+	margin:0 auto;
+	width:100%;
+	padding:10px 20px 10px 20px;
+	max-width: 412px;
+	font-size:14px;
+	color:rgba(84, 88, 90, 0.6);
+	height:150px;
+	border-radius: 2px;
+	background-color: #ffffff;
+	border: solid 1px #dfe3e9;
+	font-family: 'Lato', sans-serif;	
+}
+.modal .row .column .registration form fieldset:nth-child(4):before {
+	position:absolute;
+	top:0;
+	right:70px;
+	display:block;
+	height:34px;
+	border-left:1px solid #000;
+	z-index:1;
+	content:'';
+}
+.modal .row .column .registration form fieldset:nth-child(4):after {
+	position:absolute;
+	top:14px;
+	right:42px;
+	display:block;
+	width: 0; 
+  	height: 0; 
+  	border-left: 8px solid transparent;
+  	border-right: 8px solid transparent;
+  	border-top: 8px solid #000;
+	content:'';
+}
+.modal .row .column .registration form fieldset select {
+	padding:8px;
+	width:100%;
+	max-width: 300px;
+	min-height:34px;
+	font-size:14px;
+	color:#777;
+	background:#FFF;
+	border-radius: 2px;
+	background-color: #ffffff;
+	border: solid 1px #dfe3e9;
+	border-radius:0;
+	cursor:pointer;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-o-appearance:none;
+	appearance:none;
+	font-family: 'Lato', sans-serif;	
+}
+.modal .row .column .registration form fieldset button {
+	width:100%;
+	margin-top:40px;
+	max-width:130px;
+	height:40px;
+	font-size:16px;
+	color:#FFF;
+	font-weight:500;
+	text-align:center;
+	background:#f4bb50;
+	font-family: 'Lato', sans-serif;
+}
+.modal .row .column .registration i {
+	position:absolute;
+	top:20px;
+	right:20px;
+	display:block;
+	width:12px;
+	height:12px;
+	cursor:pointer;
+	background:url('close.png') no-repeat center center/cover;
+}
+.modal .row .column .success {
+	display:none;
+	text-align:center;
+}
+.modal .row .column .success strong {
+	font-size: 22px;
+	letter-spacing: 1px;
+	color: #54585a;
+	text-transform:uppercase;
+}
+.modal .row .column .success p {
+	margin:60px 0 110px 0;
+	font-size: 18px;
+  	line-height: 1.44;
+  	color: #54585a;
+}
+.modal .row .column .success a {
+	width:100%;
+	display:block;
+	margin:0 auto;
+	margin-top:40px;
+	max-width:130px;
+	height:40px;
+	font-size:16px;
+	color:#FFF;
+	line-height:40px;
+	font-weight:500;
+	text-decoration:none;
+	text-align:center;
+	background:#f4bb50;
+}
+
+/* ----- responsive styles ----- */
+@media only screen and (min-width :240px) and (max-width :600px){
+	.Content .search-bar .container .row .column form fieldset {
+		width:100%;
+		margin:0 0 20px 0;
+	}
+	.Content .search-bar .container .row .column form fieldset:last-child {
+		margin:0;
+	}
+	.Content .search-bar .container .row .column form fieldset:nth-child(3) {
+		width:100%;
+	}
+	.Content .search-bar .container .row .column form fieldset select, .Content .search-bar .container .row .column form fieldset input {
+		width:100%;
+	}
+	.Content .search-results .container .row .column p {
+		text-align:center;
+	}
+	.Content .search-results .container .row .column p img {
+		display:block;
+		margin:0 auto;
+	}
+	.Content .search-results .container .row .column p span {
+		display:block;
+		margin:0 auto;
+		margin-top:20px;
+		font-size:20px;
+	}
+	.Content .search-results .container .row .column p span:last-child {
+		display:block;
+		margin:0 auto;
+		margin-top:20px;
+		text-align:center;
+		float:none;
+	}
+	.Content .location .container .row .column.half {
+		width:100%;
+	}
+}
+
