@@ -146,7 +146,7 @@ function setAllMarkers(data){
             var type = getData.type;
             var userrating = Math.round(getData.userrating);
             var image = getData.image;
-                image = (image == '') ? noimage: base_url+'/public/uploads/userimage/'+userid+'/'+image;
+                image = (image == '') ? noimage: base_url+'/uploads/userimage/'+userid+'/'+image;
             var profilelink = '{{ url('/profile') }}'+'/'+userslug;
 
             var myLatLng = new google.maps.LatLng(userlat, userlng);

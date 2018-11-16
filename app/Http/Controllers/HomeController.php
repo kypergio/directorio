@@ -256,8 +256,7 @@ class HomeController extends Controller
 
         /*Todo: verificar que funcionen los correos*/
         Mail::send('email.requestDetails', $data, function ($message) use ($data) {
-            $message->to($data['email'], $data['username'])->subject('Recibir consulta del usuario!')
-                ->from('contacto@ultherapy.mx', 'Ultherapy');
+            $message->to($data['email'], $data['username'])->subject('Recibir consulta del usuario!');
         });
 
         //request confirmation mail to user
@@ -268,8 +267,7 @@ class HomeController extends Controller
             'username' => ucfirst($getName)
         ];
         Mail::send('email.requestDetailsConfirmToUser', $data2, function ($message) use ($data2) {
-            $message->to($data2['email'], $data2['username'])->subject('Su estado de solicitud')
-                ->from('contacto@ultherapy.mx', 'Ultherapy');
+            $message->to($data2['email'], $data2['username'])->subject('Su estado de solicitud');
         });
 
         echo 1;

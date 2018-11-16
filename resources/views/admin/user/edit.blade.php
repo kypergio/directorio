@@ -45,7 +45,7 @@ label.error{
         </div>
         <div class="x_content">
           <br />
-          <form id="editUserdetails" name="editUserdetails" enctype="multipart/form-data"  method="POST" data-parsley-validate class="form-horizontal form-label-left" action="{{ url('admin/user/'.$userData->id) }}">
+          <form id="editUserdetails" name="editUserdetails" enctype="multipart/form-data"  method="POST" data-parsley-validate class="form-horizontal form-label-left" action="{{ route('user.update', $userData->id) }}">
           	<input name="_method" type="hidden" value="PUT">
           	<input type="hidden" name="_token" value="{{ csrf_token() }}">
           	<div class="form-group label-floating is-select">

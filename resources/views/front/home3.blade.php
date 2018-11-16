@@ -148,7 +148,7 @@
                 var userlat = getData.userlat;
                 var userlng = getData.userlng;
                 var type = getData.type;
-                var userrating = Math.round(getData.avg_rating[0].avg);
+                var userrating = getData.avg_rating.length > 0 ? Math.round(getData.avg_rating[0].avg) : 0;
                 var image = getData.image;
                 image = (image == '') ? noimage : base_url + '/uploads/userimage/' + userid + '/' + image;
                 var profilelink = '{{ url('/profile') }}' + '/' + userslug;
