@@ -25,7 +25,7 @@
         <div class="c-navigation__container">
             <div class="c-navigation__logo">
                 <a href="https://ultherapy.mx">
-                    <img src="https://ultherapy.mx/images/ultherapy_logo.png" class=""
+                    <img src="/img/Ultherapy2.jpg" class=""
                          alt="Ultherapy, la evolución del lifting"
                          title="Haz que tu rostro luzca más joven con Ultherapy">
                 </a>
@@ -190,7 +190,7 @@
             <div class="l-wrapper">
                 <div class="c-footer_sitemap">
                     <div class="c-footer_sitemap-logo">
-                        <img src="https://ultherapy.mx/images/ultherapy_logo.svg">
+                        <img src="/img/Ultherapy2.jpg">
                     </div>
                     <div class="c-footer_sitemap-links js-footer-links">
                         <ul>
@@ -201,13 +201,14 @@
                             <li><a href="https://ultherapy.mx/resultados-lifting-facial">Resultados</a></li>
                         </ul>
                         <ul>
-                            <li><a href="https://ultherapy.mx/solicitar-cita-lifting-sin-cirugia">Encuentra un
-                                    doctor</a></li>
+                            <li><a href="#">Consideraciones</a></li>
                             <li><a href="https://ultherapy.mx/preguntas-sobre-lifting-facial">Preguntas frecuentes</a>
                             </li>
                             <li><a href="https://ultherapy.mx/como-identificar-un-tratamiento-ulthera-original">Ultherapy®
                                     El original</a></li>
+                            <li><a href="https://ultherapy.mx/solicitar-cita-lifting-sin-cirugia">Encuentra a tu médico</a></li>
                         </ul>
+                        <ul>
                     </div>
                 </div>
             </div>

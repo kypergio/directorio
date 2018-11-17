@@ -56,7 +56,7 @@
                         <fieldset>
                             <input type="hidden" name="addresslat" id="addresslat">
                             <input type="hidden" name="addresslng" id="addresslng">
-                            <button type="button" onclick="searchDetails()" id="searchBtn">Buscar</button>
+                            <button type="button" onclick="searchDetails()" id="searchBtn">BUSCAR</button>
                         </fieldset>
                     </form>
                 </div>
@@ -67,7 +67,7 @@
         <div class="container">
             <div class="row">
                 <div class="column">
-                    <h2>Médicos y Clínicas encontrados</h2>
+                    <h2 >Médicos y Clínicas encontrados:</h2>
                     <div id="searchResultContainer">
                         <p class="result" style="margin-top:30px;text-align:center;color:#ff0000;">No se encontraron
                             resultados para tu búsqueda</p>

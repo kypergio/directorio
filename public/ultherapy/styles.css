@@ -3207,7 +3207,11 @@ source {
 .c-navigation__logo {
   padding: 32px 0;
   opacity: 1;
-  transition: all linear 0.2s; }
+  transition: all linear 0.2s;
+  width: 250px;
+  height: auto;
+}
+
   .c-navigation__logo:hover {
     opacity: 0.75; }
 
@@ -5534,7 +5538,7 @@ source {
   position: relative; }
 
 .c-footer_principal {
-  background: #f6f6f6;
+  background: #c7c9c7;
   zoom: 1; }
   .c-footer_principal:before, .c-footer_principal:after {
     content: " ";
@@ -5569,8 +5573,10 @@ source {
   color: #5f6062; }
   @media only screen and (min-width: 48em) {
     .c-footer_column-content {
-      font-size: 16px;
-      width: 50%; } }
+      font-size: 14px;
+      width: 50%;
+      color: #54585a;
+    } }
   .c-footer_column-content a {
     text-decoration: none;
     color: #5f6062; }
@@ -5663,10 +5669,12 @@ source {
         clear: both; } }
   .c-footer_sitemap-links ul,
   .c-footer_sitemap-links li {
-    list-style: none; }
+    list-style: none;
+    /*text-align: right;*/
+ }
   .c-footer_sitemap-links ul {
     width: 100%;
-    text-align: center; }
+    text-align: right; }
     @media only screen and (min-width: 48em) {
       .c-footer_sitemap-links ul {
         float: left;
@@ -8610,5 +8618,7 @@ source {
 
 input[type="range"]:focus + .rangeslider .rangeslider__handle {
   box-shadow: 0 0 8px rgba(255, 0, 255, 0.9); }
+
+
 
 /*# sourceMappingURL=styles.css.map */
