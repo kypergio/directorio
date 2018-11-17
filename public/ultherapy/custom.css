@@ -398,6 +398,10 @@
 	text-align:center;
 	background:#f4bb50;
 	font-family: 'Lato', sans-serif;
+
+}
+.buttons{
+	font-weight: bold;
 }
 .modal .row .column .registration i {
 	position:absolute;
