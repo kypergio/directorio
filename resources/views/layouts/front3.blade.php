@@ -193,14 +193,7 @@
                         <img src="/img/Ultherapy2.jpg">
                     </div>
                     <div class="c-footer_sitemap-links js-footer-links">
-                        <ul>
-                            <li><a href="https://ultherapy.mx/como-funciona-un-lifting-facial-sin-cirugia">Cómo
-                                    funciona</a></li>
-                            <li><a href="https://ultherapy.mx/beneficios-lifting-facial-sin-cirugia">Antes y después</a>
-                            </li>
-                            <li><a href="https://ultherapy.mx/resultados-lifting-facial">Resultados</a></li>
-                        </ul>
-                        <ul>
+                        <ul id="ul">
                             <li><a href="#">Consideraciones</a></li>
                             <li><a href="https://ultherapy.mx/preguntas-sobre-lifting-facial">Preguntas frecuentes</a>
                             </li>
@@ -208,7 +201,13 @@
                                     El original</a></li>
                             <li><a href="https://ultherapy.mx/solicitar-cita-lifting-sin-cirugia">Encuentra a tu médico</a></li>
                         </ul>
-                        <ul>
+                        <ul id="ul">
+                            <li><a href="https://ultherapy.mx/como-funciona-un-lifting-facial-sin-cirugia">Cómo
+                                    funciona</a></li>
+                            <li><a href="https://ultherapy.mx/beneficios-lifting-facial-sin-cirugia">Antes y después</a>
+                            </li>
+                            <li><a href="https://ultherapy.mx/resultados-lifting-facial">Resultados</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

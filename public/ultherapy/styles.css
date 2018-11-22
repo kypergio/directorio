@@ -1193,7 +1193,9 @@ abbr[title], dfn[title] {
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+  color: #54585a;
+}
 
 hr {
   display: block;
@@ -5658,7 +5660,7 @@ source {
   padding-top: 15px; }
   @media only screen and (min-width: 48em) {
     .c-footer_sitemap-links {
-      float: left;
+      float: right;
       zoom: 1; }
       .c-footer_sitemap-links:before, .c-footer_sitemap-links:after {
         content: " ";
@@ -5672,6 +5674,9 @@ source {
     list-style: none;
     /*text-align: right;*/
  }
+  #ul{
+  float: right;
+    }
   .c-footer_sitemap-links ul {
     width: 100%;
     text-align: right; }
