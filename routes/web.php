@@ -11,6 +11,9 @@
 |
 */
 
+use App\User;
+use Illuminate\Support\Facades\Mail;
+
 Route::get('/', function () {
     return view('front.home3');
 })->name("home");
@@ -57,6 +60,49 @@ Route::group(
 		Route::get('/downloadUsers', 'UserController@downloadUsers')->name('admin.users.download');
 		
 
+});
+
+Route::get("test-clinica-email", function(){
+    $getUserDetails = User::where('id', 43)->get()->first();
+    $data = [
+        'getName' => "Giovanni Villanueva",
+        'getPhone' => "567890'",
+        'getEmail' => "giokyper@gmail.com",
+        'getOption' => "Cotización",
+        'getDesc' => "Hola descripción",
+        'email' => $getUserDetails->email,
+        'username' => ucfirst($getUserDetails->name)
+    ];
+    return (new \App\Mail\CorreoDoctores($data,$getUserDetails));
+});
+Route::get("test-user-email", function(){
+    $getUserDetails = User::where('id', 43)->get()->first();
+    $profilelink = url('profile') . '/' . $getUserDetails->userslug;
+    $data2 = [
+        'profilelink' => $profilelink,
+        'email' => "giokyper@gmail.com",
+        'username' => ucfirst("Verónica Rincón Castillo")
+    ];
+
+    return (new \App\Mail\CorreoUsuarios($getUserDetails, $data2));
+});
+Route::get("test-user-email-send", function(){
+    $getUserDetails = User::where('id', 43)->get()->first();
+    $profilelink = url('profile') . '/' . $getUserDetails->userslug;
+    $data2 = [
+        'profilelink' => $profilelink,
+        'email' => "kyper_giodark@hotmail.com",
+        'username' => ucfirst("Verónica Rincón Castillo")
+    ];
+    Mail::to($data2["email"], $data2["username"])
+        ->send(new \App\Mail\CorreoUsuarios($getUserDetails, $data2));
+    /*Mail::to("giokyper@gmail.com")
+        ->send(new \App\Mail\CorreoUsuarios($data2));*/
+    /*Mail::send('email.requestDetailsConfirmToUser', $data2, function ($message) use ($data2) {
+        $message
+            ->to($data2['email'], $data2['username'])
+            ->subject('[Solicitud] ¡Gracias por solicitar información sobre Ultherapy!');*/
+    /*});*/
 });
 
 Route::group(

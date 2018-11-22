@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\CorreoDoctores;
+use App\Mail\CorreoUsuarios;
 use Illuminate\Http\Request;
 use App\Contactformdetails;
 use Auth;
@@ -10,6 +12,7 @@ use App\UserAvailableTimings;
 use DB;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Mail;
+use PharIo\Manifest\Email;
 
 class HomeController extends Controller
 {
@@ -255,9 +258,12 @@ class HomeController extends Controller
         ];
 
         /*Todo: verificar que funcionen los correos*/
-        Mail::send('email.requestDetails', $data, function ($message) use ($data) {
-            $message->to($data['email'], $data['username'])->subject('Recibir consulta del usuario!');
-        });
+        Mail::to($data["email"], $data["getName"])->send(new CorreoDoctores($data, $getUserDetails));
+        /*Mail::send('email.requestDetails', $data, function ($message) use ($data) {
+            $message
+                ->to($data['email'], $data['username'])
+                ->subject('[Solicitud] Un cliente potencial solicita información sobre Ultherapy');
+        });*/
 
         //request confirmation mail to user
         $profilelink = url('profile') . '/' . $getUserDetails->userslug;
@@ -266,9 +272,7 @@ class HomeController extends Controller
             'email' => $getEmail,
             'username' => ucfirst($getName)
         ];
-        Mail::send('email.requestDetailsConfirmToUser', $data2, function ($message) use ($data2) {
-            $message->to($data2['email'], $data2['username'])->subject('Su estado de solicitud');
-        });
+        Mail::to($data2["email"], $data2["username"])->send(new CorreoUsuarios($getUserDetails, $data2));
 
         echo 1;
         exit();

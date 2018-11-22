@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+#usuario *{
+    font-family: 'Lato' !important;
+}
+/*Container Principal*/
+.container{
+    width:80%;
+    border: solid 1px #bcb5b9;
+    margin: 0 auto;
+    padding: 85px;
+}
+/*Div que rodea a la imagen del logo*/
+.logo{
+    margin:0 auto;
+    width: 163px;
+}
+.logo img{
+    width: 100%;
+}

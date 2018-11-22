@@ -69,8 +69,7 @@
                 <div class="column">
                     <h2 >Médicos y Clínicas encontrados:</h2>
                     <div id="searchResultContainer">
-                        <p class="result" style="margin-top:30px;text-align:center;color:#ff0000;">No se encontraron
-                            resultados para tu búsqueda</p>
+                        <p class="result" style="margin-top:30px;text-align:center;color:#ff0000;"></p>
                     </div>
                 </div>
             </div>
