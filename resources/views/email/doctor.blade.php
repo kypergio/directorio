@@ -9,15 +9,15 @@
 <br/>
 
 #¡Hola, Dr. {{$doctor["name"]}}!
-<p class="center">Hemos recibido en la página web la siguiente solicitud de un cliente potencial interesado en el tratamiento de Ultherapy® y hablar con usted:</p>
-**{{$cliente["getName"]}}**<br/>
-**{{$cliente["getPhone"]}}**<br/>
-**{{$cliente["getEmail"]}}**<br/><br/>
-**{{$cliente["getOption"]}}**<br/>
-{{$cliente["getDesc"]}}<br/><br/>
+<p class="center" style="margin-bottom: 59px; line-height: 22px;">Hemos recibido en la página web la siguiente solicitud de un cliente potencial interesado en el tratamiento de Ultherapy® y hablar con usted:</p>
+<p style="margin-bottom: 10px;"><b>{{$cliente["getName"]}}</b></p>
+<p style="margin-bottom: 10px;"><b>{{$cliente["getPhone"]}}</b></p>
+<p style="margin-bottom: 20px;"><b>{{$cliente["getEmail"]}}</b></p>
+<p style="margin-bottom: 1px"><b>{{$cliente["getOption"]}}</b></p>
+<p style="margin-bottom: 40px">{{$cliente["getDesc"]}}</p>
 Le sugerimos responderle en un lapso no mayor de 24 hrs. para mantener activo su interés.
 
-¡Saludos!<br/>
+<p style="margin-bottom: 30px;">¡Saludos!</p>
 *Equipo Ultherapy®*
 @slot('footer')
 @component('mail::footer')

@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
 
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script> var base_url = '{{ url('/') }}'; </script>
 </head>
 <body>
@@ -151,6 +151,10 @@
                             <a href="https://www.facebook.com/UltherapyMexicoOficial/" target="_blank"
                                class="c-footer_social-facebook js-footer-social" data-social="facebook">
                                 <img src="https://ultherapy.mx/images/shared/social_icons/u_social_icon-facebook.svg">
+                            </a>
+                            <a href="https://www.facebook.com/UltherapyMexicoOficial/" target="_blank"
+                               class="c-footer_social-facebook js-footer-social" data-social="intagram">
+                                <img src="https://ultherapy.mx/images/shared/social_icons/u_social_icon-instagram.svg">
                             </a>
                             <a href="" class="c-footer_social-instagram fake-invisible  js-footer-social"
                                data-social="instagram">

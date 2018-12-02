@@ -33,9 +33,9 @@
     <div class="location">
         <div class="container">
             <div class="row">
-                <div class="column half">
+                <div class="column half-profile">
                     <p><span>Horarios de atención</span>
-                    <table cellpadding="10">
+                    <table cellpadding="10" class="table-times">
                         <tr>
                             @if($usertimings->monStatus == 1)
                                 <td>Lunes &nbsp;&nbsp;</td>
@@ -43,7 +43,7 @@
                         @endif
                         @if($usertimings->tueStatus == 1)
                             <tr>
-                                <td>Martes</td>
+                                <td>Martes &nbsp;&nbsp;</td>
                                 <td>{{ str_replace('-', ' - ', $usertimings->tueTiming) }} </td>
                             </tr>
                         @endif
@@ -86,8 +86,8 @@
                     <p>Regístrate para mayor información.<br/><br/><a href="#"
                                                                       onclick="return openModal()">Registrarme</a></p>
                 </div>
-                <div class="column half">
-                    <div id="map_canvas" style="width: 460px;height: 250px;"></div>
+                <div class="column half-profile" style="width: 627px;">
+                    <div id="map_canvas" style="width: 620px;height: 340px;"></div>
                 </div>
             </div>
         </div>
@@ -159,7 +159,10 @@
 
             map = new google.maps.Map(document.getElementById('map_canvas'), {
                 zoom: zoom,
-                center: {lat: parseFloat(lat), lng: parseFloat(lng)}, disableDefaultUI: true,
+                center: {lat: parseFloat(lat), lng: parseFloat(lng)},
+                fullscreenControl: false,
+                mapTypeControl: false,
+                streetViewControl: false,
                 maxZoom: 16
             });
 

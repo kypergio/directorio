@@ -75,6 +75,20 @@ Route::get("test-clinica-email", function(){
     ];
     return (new \App\Mail\CorreoDoctores($data,$getUserDetails));
 });
+Route::get("test-clinica-email-send", function(){
+    $getUserDetails = User::where('id', 43)->get()->first();
+    $data = [
+        'getName' => "Giovanni Villanueva",
+        'getPhone' => "567890'",
+        'getEmail' => "giokyper@gmail.com",
+        'getOption' => "Cotización",
+        'getDesc' => "Hola descripción",
+        'email' => $getUserDetails->email,
+        'username' => ucfirst($getUserDetails->name)
+    ];
+    Mail::to($data["getEmail"], $data["getName"])
+        ->send(new \App\Mail\CorreoDoctores($data, $getUserDetails));
+});
 Route::get("test-user-email", function(){
     $getUserDetails = User::where('id', 43)->get()->first();
     $profilelink = url('profile') . '/' . $getUserDetails->userslug;

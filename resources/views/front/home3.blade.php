@@ -156,7 +156,7 @@
                 html += '<p class="' + className + ' result" onclick="showProfile(\'' + profilelink + '\')">';
                 html += '<img src="' + image + '" alt="' + ucfirst(username) + '" />';
                 html += '<span>' + ucfirst(username) + '</span>';
-                html += '<span><b>' + state + '</b>' + city + '</span>';
+                html += '<span><b>' + state + '</b><i>' + city + '</i></span>';
                 html += '</p>';
                 /*****************************************************/
 

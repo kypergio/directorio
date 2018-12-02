@@ -3,22 +3,19 @@
 @component('mail::header', ["url" => ""])
 @endcomponent
 @endslot
-<p class="center">
-    <img src="https://image.ibb.co/k5Hm2A/mail-logo.jpg" alt="">
-</p>
-<br/>
+<p class="center" style="margin-bottom: 58px;"><img src="https://image.ibb.co/k5Hm2A/mail-logo.jpg" alt=""></p>
 
-#¡Hola {{$cliente["username"]}}, agradecemos tu consulta!
+<h1 style="margin-bottom: 30px;">¡Hola {{$cliente["username"]}}, agradecemos tu consulta!</h1>
 <p class="center">Estos son los datos completos del médico o clínica que solicitaste. Te sugerimos ponerte en contacto directo con ellos para recibir toda la información que necesitas y recibir atención personalizada.</p>
----
-**Nombre: ** Dr. {{$doctor["name"]}}<br/><br/>
+<hr>
+<p style="margin-bottom: 10px;"><b>Nombre: </b> Dr. {{$doctor["name"]}}</p>
 **Dirección: ** {{$doctor["address"]}}<br/>
 {{$doctor["street"]}}<br/>
 {{$doctor["colony"]}}, {{$doctor["state"]}}<br/>
-<a href="https://www.google.com/maps/?q={{$doctor["lat"]}},{{$doctor["lng"]}}" target="_blank">Abrir en Google Maps</a><br/><br/>
-**Teléfono: ** {{$doctor["phone"]}}<br/>
-**Correo Electrónico: ** {{$doctor["email"]}}<br/><br/>
-**Horario de atención: ** 9:00 a 19:00 hrs<br/><br/>
+<a style="margin-top: 10px; margin-bottom: 20px;" href="https://www.google.com/maps/?q={{$doctor["lat"]}},{{$doctor["lng"]}}" target="_blank">Abrir en Google Maps</a><br/><br/>
+<p style="margin-bottom: 5px;"><b>Teléfono: </b>{{$doctor["phone"]}}</p>
+<p><b>Correo Electrónico: </b>{{$doctor["email"]}}</p>
+<p style="margin-bottom: 30px;"><b>Horario de atención: </b>9:00 a 19:00 hrs</p>
 *Equipo Ultherapy®*
 @slot('footer')
 @component('mail::footer')

@@ -87,7 +87,7 @@ label.error{
 				<label class="control-label" for="name">Nombre Completo <span class="required">*</span>
 				</label>
 				<div class="">
-					<input minlength="2" maxlength="30" type="text" id="name" required="required" value="{{ old('name') }}" class="form-control col-md-7 col-xs-12" name="name">
+					<input minlength="2" type="text" id="name" required="required" value="{{ old('name') }}" class="form-control col-md-7 col-xs-12" name="name">
 					<div class="error">{{ $errors->first('name') }}</div>
 	            </div>
 
@@ -117,9 +117,9 @@ label.error{
 	            </div>
             </div>
             <div class="form-group">
-				<label class="control-label" for="address">Especialización <span class="required">*</span></label>
+				<label class="control-label" for="address">Especialización</label>
 				<div class="">
-					<textarea required minlength="20" class="form-control col-md-7 col-xs-12" name="specialization" id="specialization">{{ old('specialization') }}</textarea>
+					<textarea class="form-control col-md-7 col-xs-12" name="specialization" id="specialization">{{ old('specialization') }}</textarea>
 					<div class="error">{{ $errors->first('specialization') }}</div>
 	            </div>
             </div>

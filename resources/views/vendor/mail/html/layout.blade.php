@@ -6,11 +6,18 @@
 </head>
 <body>
     <style>
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 699px) {
             .inner-body {
                 width: 100% !important;
             }
-
+            .content-cell{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .footer .content-cell{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
             .footer {
                 width: 100% !important;
             }
