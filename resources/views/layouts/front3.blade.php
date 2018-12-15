@@ -143,25 +143,26 @@
             <div class="l-wrapper">
                 <div class="c-footer_column c-footer_column-social">
                     <div class="c-footer_column-content">
+                        <div id="redes2">Síguenos en las redes</div>
                         <div class="c-footer_column-img c-footer_social">
-                            <a href="" class="c-footer_social-twitter fake-invisible  js-footer-social"
+                            {{--<a href="" class="c-footer_social-twitter fake-invisible  js-footer-social"
                                data-social="twitter">
                                 <img src="https://ultherapy.mx/images/shared/social_icons/u_social_icon-twitter.svg">
-                            </a>
+                            </a>--}}
                             <a href="https://www.facebook.com/UltherapyMexicoOficial/" target="_blank"
                                class="c-footer_social-facebook js-footer-social" data-social="facebook">
                                 <img src="https://ultherapy.mx/images/shared/social_icons/u_social_icon-facebook.svg">
                             </a>
                             <a href="https://www.facebook.com/UltherapyMexicoOficial/" target="_blank"
                                class="c-footer_social-facebook js-footer-social" data-social="intagram">
-                                <img src="https://ultherapy.mx/images/shared/social_icons/u_social_icon-instagram.svg">
+                                <img id="instagram" src="https://ultherapy.mx/images/shared/social_icons/u_social_icon-instagram.svg">
                             </a>
-                            <a href="" class="c-footer_social-instagram fake-invisible  js-footer-social"
+                            {{--<a href="" class="c-footer_social-instagram fake-invisible  js-footer-social"
                                data-social="instagram">
                                 <img src="https://ultherapy.mx/images/shared/social_icons/u_social_icon-instagram.svg">
-                            </a>
+                            </a>--}}
                         </div>
-                        <div>Síguenos en las redes</div>
+                        <div id="redes">Síguenos en las redes</div>
                     </div>
                 </div>
                 <div class="c-footer_column c-footer_column-how_works js-footer-submenu"

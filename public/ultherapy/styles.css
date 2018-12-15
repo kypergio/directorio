@@ -1551,6 +1551,25 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+/*    display: inline-block;
+    align-items: center;*/
+}
+@media only screen and (min-width: 240px) and (max-width: 600px) {
+    #modal{
+        width: 268px;
+        height: 150px;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: center;
+        color: #54585a;
+        margin: 0 auto;
+        margin-bottom: 29px;
+    }
 }
 
 * {
@@ -7529,6 +7548,14 @@ source {
     position: relative;
 }
 
+@media only screen and (min-width: 240px) and (max-width: 600px) {
+    .c-footer{
+        padding-top: 30px;
+        top: 97px;
+        border-top-width: 0;
+    }
+}
+
 .c-footer_principal {
     background: #c7c9c782;
     zoom: 1;
@@ -7551,6 +7578,16 @@ source {
     width: 100%;
     padding: 20px;
     text-align: center;
+}
+@media only screen and (min-width: 240px) and (max-width: 600px){
+    .c-footer_column {
+        font-weight: 300;
+        float: right;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        height: 150px;
+    }
 }
 
 @media only screen and (min-width: 48em) {
@@ -7578,6 +7615,36 @@ source {
     color: #5f6062;
 }
 
+#redes2{
+    display: none;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 600px){
+    .c-footer_column-content {
+        width: 288px;
+        height: 82px;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+
+        color: #54585a;
+    }
+    #redes2{
+        display: block;
+        margin-top: 11px;
+        margin-bottom: 33px;
+    }
+
+    #redes{
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 48em) {
     .c-footer_column-content {
         font-size: 14px;
@@ -7599,6 +7666,9 @@ source {
     margin-bottom: 15px;
 }
 .table-times{
+    width: 309px;
+    height: 52px;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: normal;
     font-style: normal;
@@ -7606,6 +7676,25 @@ source {
     line-height: 1.44;
     letter-spacing: normal;
     color: #54585a;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 600px) {
+    .table-times{
+        width: 288px;
+        height: 44px;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        color: rgba(84, 88, 90, 0.6);
+    }
+
+    .dias{
+        color: #54585a;
+    }
 }
 
 .c-footer_social a {
@@ -7646,6 +7735,21 @@ source {
 
 .c-footer_social-facebook {
     padding: 0;
+}
+@media only screen and (min-width: 240px) and (max-width: 600px) {
+    .c-footer_social-facebook img,
+    .c-footer_social-twitter img,
+    .c-footer_social-instagram img {
+        width: 35px;
+        height: 35px;
+        margin: 0 auto;
+    }
+
+    #instagram{
+        margin-left: 30px;
+
+    }
+
 }
 
 .c-footer_social-twitter {
@@ -7743,7 +7847,7 @@ source {
 
 .c-footer_sitemap-links ul {
     width: 100%;
-    text-align: right;
+    text-align: center;
 }
 
 @media only screen and (min-width: 48em) {

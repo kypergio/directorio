@@ -3,15 +3,36 @@
 @section('content')
     <style>
         .modal .row .column .registration form fieldset input, .modal .row .column .registration form fieldset textarea, .modal .row .column .registration form fieldset select {
-            border: 1px solid #f1b434;
+            padding-top: 11px !important;
+            padding-left: 10px;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 10px;
+
+        }
+        @media only screen and (min-width: 240px) and (max-width: 600px) {
+            .mapa{
+                width: 100% !important;
+            }
+        }
+
+        @media only screen and (min-width: 240px) and (max-width: 600px) {
+            .modal .row .column .registration form fieldset {
+                position: relative;
+                display: inline-block;
+                margin-bottom: 20px;
+                width: 267px;
+            }
+            .topmargin{
+                margin-top: 0 !important;
+            }
         }
 
         .modal .row .column .registration form fieldset:nth-child(4):before {
-            border-left: 1px solid #f1b434;;
+            border-left: 1px solid #4a4a4a;;
         }
 
         .modal .row .column .registration form fieldset:nth-child(4):after {
-            border-top: 8px solid #f1b434;
+            border-top: 8px solid #4a4a4a;
         }
     </style>
     <div class="profile">
@@ -34,50 +55,50 @@
         <div class="container">
             <div class="row">
                 <div class="column half-profile">
-                    <p><span>Horarios de atención</span>
+                    <p><span>HORARIOS </span>
                     <table cellpadding="10" class="table-times">
                         <tr>
                             @if($usertimings->monStatus == 1)
-                                <td>Lunes &nbsp;&nbsp;</td>
+                                <td class="dias">Lunes &nbsp;&nbsp;</td>
                                 <td>{{ str_replace('-', ' - ', $usertimings->monTiming) }} </td></tr>
                         @endif
                         @if($usertimings->tueStatus == 1)
                             <tr>
-                                <td>Martes &nbsp;&nbsp;</td>
+                                <td class="dias">Martes &nbsp;&nbsp;</td>
                                 <td>{{ str_replace('-', ' - ', $usertimings->tueTiming) }} </td>
                             </tr>
                         @endif
 
                         @if($usertimings->wedStatus == 1)
                             <tr>
-                                <td>Miércoles &nbsp;&nbsp; </td>
+                                <td class="dias">Miércoles &nbsp;&nbsp; </td>
                                 <td>{{ str_replace('-', ' - ', $usertimings->wedTiming) }} </td>
                             </tr>
                         @endif
 
                         @if($usertimings->thuStatus == 1)
                             <tr>
-                                <td>Jueves &nbsp;&nbsp; </td>
+                                <td class="dias">Jueves &nbsp;&nbsp; </td>
                                 <td>{{ str_replace('-', ' - ', $usertimings->thuTiming) }} </td>
                             </tr>
                         @endif
 
                         @if($usertimings->friStatus == 1)
                             <tr>
-                                <td>Viernes &nbsp;&nbsp; </td>
+                                <td class="dias">Viernes &nbsp;&nbsp; </td>
                                 <td>{{ str_replace('-', ' - ', $usertimings->friTiming) }} </td>
                             </tr>
                         @endif
 
                         @if($usertimings->satStatus == 1)
                             <tr>
-                                <td>Sábado&nbsp;&nbsp; </td>
+                                <td class="dias">Sábado&nbsp;&nbsp; </td>
                                 <td>{{ str_replace('-', ' - ', $usertimings->satTiming) }} </td>
                             </tr>
                         @endif
                         @if($usertimings->sunStatus == 1)
                             <tr>
-                                <td>Domingo &nbsp;&nbsp; </td>
+                                <td class="dias">Domingo &nbsp;&nbsp; </td>
                                 <td>{{ str_replace('-', ' - ', $usertimings->sunTiming) }} </td>
                             </tr>
                         @endif
@@ -86,8 +107,8 @@
                     <p>Regístrate para mayor información.<br/><br/><a href="#"
                                                                       onclick="return openModal()">Registrarme</a></p>
                 </div>
-                <div class="column half-profile" style="width: 627px;">
-                    <div id="map_canvas" style="width: 620px;height: 340px;"></div>
+                <div class="column half-profile mapa" id="mapa2" style="width: 627px;">
+                    <div class="mapa" id="map_canvas" style="width: 620px;height: 340px;"></div>
                 </div>
             </div>
         </div>
@@ -98,23 +119,24 @@
             <div class="column">
                 <div class="registration">
                     <i onclick="return closeModal()"></i>
-                    <p>Llena los campos para recibir por correo la información completa del médico o clínica. Y como nos
+                    <p id="modal">Llena los campos para recibir por correo la información completa del médico o clínica.
+                        Y como nos
                         gusta consentirte, además podrás recibir antes que nadie beneficios exclusivos como promociones,
                         eventos y mucho más.</p>
                     <div id="reqmsgContainer" style="display: none;"></div>
-                    <form action="" method="" onsubmit="return saveReqInfo();" name="reqForm" id="reqForm">
+                    <form class="topmargin" action="" method="" onsubmit="return saveReqInfo();" name="reqForm" id="reqForm">
 
-                        <fieldset>
-                            <input type="text" placeholder="Nombre" id="req_name" name="req_name"/>
+                        <fieldset class="topmargin">
+                            <input type="text" placeholder="Nombre completo" id="req_name" name="req_name"/>
                         </fieldset>
-                        <fieldset>
-                            <input type="text" placeholder="Teléfono" id="req_phone" name="req_phone"/>
+                        <fieldset class="topmargin">
+                            <input type="text" placeholder="Teléfono (10 dígitos incluyendo lada)" id="req_phone" name="req_phone"/>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="topmargin">
                             <input type="text" placeholder="Correo electrónico" email="true" id="req_email"
                                    name="req_email"/>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="topmargin">
                             <select name="req_option" id="req_option">
                                 <option value="">¿Qué le quieres preguntar?</option>
                                 <option value="1">Solicitar Costos</option>
@@ -123,7 +145,7 @@
                                 <option value="4">Informacion Sobre Ultherapy</option>
                             </select>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="topmargin">
                             <textarea name="req_description" id="req_description"
                                       placeholder="Cuéntale a tu médico o clínica tu inquietud:"></textarea>
                             <button type="submit" class="buttons" name="submit" id="submit">Enviar</button>
