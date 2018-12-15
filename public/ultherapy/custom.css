@@ -334,7 +334,7 @@
 /* ----- generic styles for modal ----- */
 .modal {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -343,8 +343,18 @@
     height: 100%;
     text-align: center;
     float: left;
-    background: rgba(0, 0, 0, 0.8);
     z-index: 101;
+}
+
+#overlay{
+    position: fixed;
+    top:0;
+    right:0;
+    width:100%;
+    height:100vh;
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
     opacity: 1;
 }
 
@@ -432,7 +442,11 @@
 .modal .row .column .registration form fieldset input:focus, .modal .row .column .registration form fieldset textarea:focus, .modal .row .column .registration form fieldset select:focus {
     border-color: #f4bb50;
 }
+.modal .row .column .registration form fieldset input:valid,
+.modal .row .column .registration form fieldset textarea:valid,
+.modal .row .column .registration form fieldset select:valid {
 
+}
 .modal .row .column .registration form fieldset textarea {
     display: block;
     margin: 0 auto;
@@ -558,7 +572,7 @@
 }
 
 /* ----- responsive styles ----- */
-@media only screen and (min-width: 240px) and (max-width: 600px) {
+@media (max-width: 600px) {
     .Content .search-bar .container .row .column form fieldset {
         width: 100%;
         margin: 0 0 20px 0;
@@ -689,7 +703,7 @@
     .Content .location .container .row .column p:last-child {
         margin: 0 auto;
         margin-top: 40px;
-        width: 288px;
+        width: 100%;
         height: 19px;
         font-family: 'Lato', sans-serif;
         font-size: 16px;
@@ -727,7 +741,7 @@
     }
 
 }
-@media only screen and (min-width: 598px) and (max-width: 830px){
+@media (max-width: 830px){
     .modal .row .column .registration form fieldset:nth-child(4):before {
         margin: 0 auto;
         position: absolute;

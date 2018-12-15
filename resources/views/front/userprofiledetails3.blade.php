@@ -9,13 +9,13 @@
             padding-bottom: 10px;
 
         }
-        @media only screen and (min-width: 240px) and (max-width: 600px) {
+        @media (max-width: 600px) {
             .mapa{
                 width: 100% !important;
             }
         }
 
-        @media only screen and (min-width: 240px) and (max-width: 600px) {
+        @media (max-width: 600px) {
             .modal .row .column .registration form fieldset {
                 position: relative;
                 display: inline-block;
@@ -113,7 +113,7 @@
             </div>
         </div>
     </div>
-
+    <div id="overlay"></div>
     <div class="modal">
         <div class="row">
             <div class="column">
@@ -130,10 +130,10 @@
                             <input type="text" placeholder="Nombre completo" id="req_name" name="req_name"/>
                         </fieldset>
                         <fieldset class="topmargin">
-                            <input type="text" placeholder="Teléfono (10 dígitos incluyendo lada)" id="req_phone" name="req_phone"/>
+                            <input type="text" placeholder="Teléfono (10 dígitos incluyendo lada)" minlength="1" id="req_phone" name="req_phone"/>
                         </fieldset>
                         <fieldset class="topmargin">
-                            <input type="text" placeholder="Correo electrónico" email="true" id="req_email"
+                            <input type="text" placeholder="Correo electrónico" minlength="1" email="true" id="req_email"
                                    name="req_email"/>
                         </fieldset>
                         <fieldset class="topmargin">
@@ -146,7 +146,7 @@
                             </select>
                         </fieldset>
                         <fieldset class="topmargin">
-                            <textarea name="req_description" id="req_description"
+                            <textarea name="req_description" minlength="1" id="req_description"
                                       placeholder="Cuéntale a tu médico o clínica tu inquietud:"></textarea>
                             <button type="submit" class="buttons" name="submit" id="submit">Enviar</button>
                         </fieldset>

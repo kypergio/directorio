@@ -1554,7 +1554,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 /*    display: inline-block;
     align-items: center;*/
 }
-@media only screen and (min-width: 240px) and (max-width: 600px) {
+@media  (max-width: 600px) {
     #modal{
         width: 268px;
         height: 150px;
@@ -7548,7 +7548,7 @@ source {
     position: relative;
 }
 
-@media only screen and (min-width: 240px) and (max-width: 600px) {
+@media (max-width: 600px) {
     .c-footer{
         padding-top: 30px;
         top: 97px;
@@ -7579,7 +7579,7 @@ source {
     padding: 20px;
     text-align: center;
 }
-@media only screen and (min-width: 240px) and (max-width: 600px){
+@media (max-width: 600px){
     .c-footer_column {
         font-weight: 300;
         float: right;
@@ -7619,9 +7619,9 @@ source {
     display: none;
 }
 
-@media only screen and (min-width: 240px) and (max-width: 600px){
+@media (max-width: 600px){
     .c-footer_column-content {
-        width: 288px;
+        width: 100%;
         height: 82px;
         font-family: 'Lato', sans-serif;
         font-size: 16px;
@@ -7678,9 +7678,9 @@ source {
     color: #54585a;
 }
 
-@media only screen and (min-width: 240px) and (max-width: 600px) {
+@media (max-width: 600px) {
     .table-times{
-        width: 288px;
+        width: 100%;
         height: 44px;
         font-family: 'Lato', sans-serif;
         font-size: 16px;
@@ -7706,6 +7706,26 @@ source {
     .c-footer_social a {
         margin-right: 15.65px;
     }
+    .c-footer_social-facebook,
+    .c-footer_social-twitter,
+    .c-footer_social-instagram {
+        height: 20px;
+    }
+    .c-footer_social-twitter {
+        padding: 1px 0;
+    }
+    .c-footer_social-instagram {
+        padding: 0;
+    }
+    .c-footer_sitemap-logo {
+        float: left;
+        width: 40%;
+        margin-bottom: 0;
+    }
+
+    .c-footer_sitemap-logo img {
+        margin: 0;
+    }
 }
 
 .c-footer_social a:last-child {
@@ -7718,14 +7738,6 @@ source {
     height: 45px;
 }
 
-@media only screen and (min-width: 48em) {
-    .c-footer_social-facebook,
-    .c-footer_social-twitter,
-    .c-footer_social-instagram {
-        height: 20px;
-    }
-}
-
 .c-footer_social-facebook img,
 .c-footer_social-twitter img,
 .c-footer_social-instagram img {
@@ -7736,7 +7748,7 @@ source {
 .c-footer_social-facebook {
     padding: 0;
 }
-@media only screen and (min-width: 240px) and (max-width: 600px) {
+@media  (max-width: 600px) {
     .c-footer_social-facebook img,
     .c-footer_social-twitter img,
     .c-footer_social-instagram img {
@@ -7756,20 +7768,8 @@ source {
     padding: 5px 0;
 }
 
-@media only screen and (min-width: 48em) {
-    .c-footer_social-twitter {
-        padding: 1px 0;
-    }
-}
-
 .c-footer_social-instagram {
     padding: 2px 0;
-}
-
-@media only screen and (min-width: 48em) {
-    .c-footer_social-instagram {
-        padding: 0;
-    }
 }
 
 .c-footer_sitemap {
@@ -7798,18 +7798,6 @@ source {
     margin: auto;
     height: 37px;
     width: auto;
-}
-
-@media only screen and (min-width: 48em) {
-    .c-footer_sitemap-logo {
-        float: left;
-        width: 40%;
-        margin-bottom: 0;
-    }
-
-    .c-footer_sitemap-logo img {
-        margin: 0;
-    }
 }
 
 .c-footer_sitemap-links {
