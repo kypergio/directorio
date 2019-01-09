@@ -63,7 +63,8 @@ function openModal() {
     var overlay = document.querySelector('#overlay');
 
     if (modal) {
-        modal.style.display = 'table';
+        var width = $(window).width();
+        modal.style.display = width <= 838 ? 'flex' : "table";
         overlay.style.display = 'table';
     }
     _openModal = true;
