@@ -7550,8 +7550,8 @@ source {
 
 @media (max-width: 600px) {
     .c-footer{
-        padding-top: 30px;
-        top: 97px;
+        padding-top: 40px;
+        top: 187px;
         border-top-width: 0;
     }
 }

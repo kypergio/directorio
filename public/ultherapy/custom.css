@@ -346,12 +346,12 @@
     z-index: 101;
 }
 
-#overlay{
+#overlay {
     position: fixed;
-    top:0;
-    right:0;
-    width:100%;
-    height:100vh;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
     display: none;
     background: rgba(0, 0, 0, 0.8);
     z-index: 100;
@@ -442,11 +442,13 @@
 .modal .row .column .registration form fieldset input:focus, .modal .row .column .registration form fieldset textarea:focus, .modal .row .column .registration form fieldset select:focus {
     border-color: #f4bb50;
 }
+
 .modal .row .column .registration form fieldset input:valid,
 .modal .row .column .registration form fieldset textarea:valid,
 .modal .row .column .registration form fieldset select:valid {
 
 }
+
 .modal .row .column .registration form fieldset textarea {
     display: block;
     margin: 0 auto;
@@ -573,6 +575,14 @@
 
 /* ----- responsive styles ----- */
 @media (max-width: 600px) {
+
+    .Content .hero {
+        margin:0 auto;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
     .Content .search-bar .container .row .column form fieldset {
         width: 100%;
         margin: 0 0 20px 0;
@@ -635,6 +645,7 @@
     }
 
     .Content .hero .container .row .column p {
+        margin: 0 auto;
         width: 288px;
         height: 110px;
         font-family: 'Lato', sans-serif;
@@ -646,8 +657,7 @@
         letter-spacing: normal;
         text-align: center;
         color: #ffffff;
-        margin: 0 auto;
-        margin-top: 30px;
+        padding-top: 30px;
     }
 
     .Content .profile .container .row .column img {
@@ -676,9 +686,9 @@
     }
 
     .Content .container .row .column {
-        height: 287px;
-        padding-top: 31px;
-        padding-bottom: 40px;
+        height: 254px;
+        padding-top: 30px;
+        padding-bottom: 36px;
         background-color: rgba(199, 201, 199, 0.1);
     }
 
@@ -687,7 +697,8 @@
         height: 200px;
         padding: 30px 16px 0 16px;
     }
-    .mapa#mapa2{
+
+    .mapa#mapa2 {
         padding-top: 60px;
     }
 
@@ -715,6 +726,7 @@
         text-align: center;
         color: #54585a;
     }
+
     .modal .row .column .registration form fieldset:nth-child(4):before {
         margin: 0 auto;
         position: absolute;
@@ -726,6 +738,7 @@
         z-index: 1;
         content: '';
     }
+
     .modal .row .column .registration form fieldset:nth-child(4):after {
         margin: 0 auto;
         position: absolute;
@@ -739,9 +752,27 @@
         border-top: 8px solid #000;
         content: '';
     }
+    .Content .search-bar {
+        padding: 0px 0 63px 0;
+        background: #c7c9c782;
+    }
+    .Content .search-results {
+        padding: 0;
+        background: #f9f9f9;
+    }
+ /*   .Content .search-results .container .row .column p {
+        margin: 0 auto;
+        padding: 15px 20px 20px 40px;
+        vertical-align: top;
+        background: #FFF;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;;
+    }*/
 
 }
-@media (max-width: 830px){
+
+@media (max-width: 830px) {
     .modal .row .column .registration form fieldset:nth-child(4):before {
         margin: 0 auto;
         position: absolute;
@@ -753,6 +784,7 @@
         z-index: 1;
         content: '';
     }
+
     .modal .row .column .registration form fieldset:nth-child(4):after {
         margin: 0 auto;
         position: absolute;
